@@ -30,7 +30,7 @@ import { HtmlTag } from "svelte/internal";
 	 <p> if i use svelte, it must have meaning. this all text are came from 'props' don't you believe? look to the source.   </p>
 
 	 <button on:click="{handleClick}"> Click this button! {count===0 ? 'nobody clicked this button yet :( ' : ' to make this button happy!' } </button>
-	 <label>{count===0 ? 'the button is unhappy :(' : "nö" }    </label>
+	 <label>{count===0 ? 'the button is unhappy:(' : "nö" }    </label>
 	
 
 
