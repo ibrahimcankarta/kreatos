@@ -1,1 +1,1 @@
-<?php include_once("App.svelte")?>
+<?php include_once("/src/App.svelte")?>
