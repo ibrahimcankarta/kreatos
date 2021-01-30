@@ -13,11 +13,15 @@ import { HtmlTag } from "svelte/internal";
 	let count =0;
 	function handleClick() {
 	count += 1;
-	
-}
+	}
 
+	let user = { loggedIn: false };
 
+	function toggle() {
+		user.loggedIn = !user.loggedIn;
+	}
 </script>
+
 <!--  if you looking in here, please follow this link! : https://www.youtube.com/watch?v=GoLJJRIWCLU this is my fav song to listen. With this song, web site is cooler than actually is. Hope you enjoy! -->
 <main>
 	
@@ -35,6 +39,20 @@ import { HtmlTag } from "svelte/internal";
 	 <button class="dummyButton" on:click="{handleClick}"> Click this button! {count===0 ? 'nobody clicked this button yet :( ' : ' to make this button happy!' } </button>
 	 <p> people clicked this button {count} times!     </p> <!-- Reactivity -->
 
+
+	 <h3>or try this!</h3>
+	 {#if user.loggedIn}
+	 <button class="dummyButton2" on:click={toggle}>
+		Out
+	</button>
+		 
+	 {/if}
+
+	 	{#if !user.loggedIn}
+			<button class="dummyButton2"  on:click={toggle}>
+				In
+			</button>
+		{/if}
 
 
 
@@ -63,6 +81,7 @@ import { HtmlTag } from "svelte/internal";
 	.headImg{
 		max-width: 420px;
 		border-radius:2ch  ;
+		
 	}
 	main {
 		text-align: center;
@@ -93,11 +112,25 @@ import { HtmlTag } from "svelte/internal";
 		margin: 9px;
 	}
 	.dummyButton{
+		width: 420px;
+		border-radius: 5px;
 		background-color: #ff7b00;
 		font-weight: bold;
+		margin: 7px;
 		
 	}
+	.dummyButton2{
+		border-radius: 5px;
+		width: 70px;
+		background-color: #ff7b00;
+		font-weight: bold;
+		margin: 7px;
+	}
 	.dummyButton:hover{
+		background-color: black;
+		color: blanchedalmond;
+	}
+	.dummyButton2:hover{
 		background-color: black;
 		color: blanchedalmond;
 	}
