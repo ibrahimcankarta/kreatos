@@ -1,10 +1,12 @@
 this is a personal web site made with svelte. some jokes and lot's of dummy things. but not boring, i promise. 
 Let's Go!
 
-First ```bash
+First 
+```bash
   npm install
 ```
-And Go! ```bash
+And Go! 
+```bash
   npm run dev
 ```
 
