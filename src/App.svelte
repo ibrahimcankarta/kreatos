@@ -36,20 +36,24 @@ import { HtmlTag } from "svelte/internal";
 	 <p> people clicked this button {count} times!     </p> <!-- Reactivity -->
 
 
-	 <h3>here's my links!</h3>
+
+
+
+
+
+
+
+
+	 <h3 class="links">here's my links!</h3>
+
+	 <a href="https://www.twitter.com/ibrahimcankarta"> <img src="tw-logo.png" class="tw-logo" alt="twitter logo"> </a>
+
 	 <a href="https://www.github.com/ibrahimcankarta"> <img src="github.png" class="logo" alt="github logo"> </a>
 
 	 <a href="https://www.linkedin.com/in/ibrahimcankarta"> <img src="linkedin.png" class="logo" alt="linkedin logo"> </a>
 
-	 <a href="https://www.twitter.com/ibrahimcankarta"> <img src="tw-logo.png" class="tw-logo" alt="twitter logo"> </a>
 	 
 	 
-	
-
-
-
-
-
 	<p> /* Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps. */</p>
 </main>
 
@@ -84,6 +88,10 @@ import { HtmlTag } from "svelte/internal";
 		}
 
 	}
+	.links{
+		font-size: 35px;
+		margin: 9px;
+	}
 	.dummyButton{
 		background-color: #ff7b00;
 		font-weight: bold;
@@ -95,10 +103,16 @@ import { HtmlTag } from "svelte/internal";
 	}
 	.logo{
 		max-width: 40px;
+		margin-left: 7px;
+		margin-right: 7px;
+	
+		
 	}
 	.tw-logo{
 		max-width: 40px;
+		margin-left: 7px;
+		margin-right: 7px;
 		background-color: black;
-		border-radius: 2ch;
+		border-radius: 1ch;
 	}
 </style>
