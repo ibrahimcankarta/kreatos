@@ -34,6 +34,16 @@ import { HtmlTag } from "svelte/internal";
 
 	 <button class="dummyButton" on:click="{handleClick}"> Click this button! {count===0 ? 'nobody clicked this button yet :( ' : ' to make this button happy!' } </button>
 	 <p> people clicked this button {count} times!     </p> <!-- Reactivity -->
+
+
+	 <h3>here's my links!</h3>
+	 <a href="https://www.github.com/ibrahimcankarta"> <img src="github.png" class="logo" alt="github logo"> </a>
+
+	 <a href="https://www.linkedin.com/in/ibrahimcankarta"> <img src="linkedin.png" class="logo" alt="linkedin logo"> </a>
+
+	 <a href="https://www.twitter.com/ibrahimcankarta"> <img src="tw-logo.png" class="tw-logo" alt="twitter logo"> </a>
+	 
+	 
 	
 
 
@@ -82,5 +92,13 @@ import { HtmlTag } from "svelte/internal";
 	.dummyButton:hover{
 		background-color: black;
 		color: blanchedalmond;
+	}
+	.logo{
+		max-width: 40px;
+	}
+	.tw-logo{
+		max-width: 40px;
+		background-color: black;
+		border-radius: 2ch;
 	}
 </style>
