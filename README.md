@@ -1,6 +1,13 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+this is a personal web site made with svelte. some jokes and lot's of dummy things. but not boring, i promise. 
+Let's Go!
 
----
+First ```bash
+  npm install
+```
+And Go! ```bash
+  npm run dev
+```
+
 
 # svelte app
 
