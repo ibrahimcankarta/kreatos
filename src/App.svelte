@@ -30,8 +30,10 @@ import { HtmlTag } from "svelte/internal";
 	 <h3> Let's start with basic </h3>
 	 <p> if i use svelte, it must have meaning. this all text are came from 'props' don't you believe? look to the source.   </p>
 
+	 <!-- Reactivity -->
+
 	 <button class="dummyButton" on:click="{handleClick}"> Click this button! {count===0 ? 'nobody clicked this button yet :( ' : ' to make this button happy!' } </button>
-	 <label> people clicked this button {count} times!     </label>
+	 <p> people clicked this button {count} times!     </p> <!-- Reactivity -->
 	
 
 
@@ -42,6 +44,7 @@ import { HtmlTag } from "svelte/internal";
 </main>
 
 <style>
+	
 
 	.headImg{
 		max-width: 420px;
