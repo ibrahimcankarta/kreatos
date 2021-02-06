@@ -9,10 +9,14 @@ import { HtmlTag } from "svelte/internal";
 	export let drummers;
 
 	let kod= "You are the <p>{count} </p>'th person to clicked this button! ";
-
+	
 	let count =0;
 	function handleClick() {
 	count += 1;
+	}
+
+	function buttonFire(){
+		
 	}
 
 	let user = { loggedIn: false };
@@ -40,6 +44,7 @@ import { HtmlTag } from "svelte/internal";
 
 	 <button class="dummyButton" on:click="{handleClick}"> Click this button! {count===0 ? 'nobody clicked this button yet :( ' : ' to make this button happy!' } </button>
 	 <p> people clicked this button {count} times!     </p> <!-- Reactivity -->
+	 <button id="buttonFire" on:click={buttonFire} >Button Fire</button>
 
 
 	 <h3>or try this!</h3>
