@@ -1,6 +1,6 @@
 <script>
 import { HtmlTag } from "svelte/internal";
-
+	import firebase from "./services/firebase.js"
 	export let name;
 	export let src;
 	export let expText;
@@ -13,13 +13,28 @@ import { HtmlTag } from "svelte/internal";
 	let count =0;
 	function handleClick() {
 	count += 1;
+	const docRef = db.collection('number').doc('b77kAQY3y6IKDzrCIaEV');
+	docRef.set({
+  value:count
+	});
 	}
 
-	function buttonFire(){
-		
-	}
+	const db = firebase.firestore();
+	const doc = db.collection('number').doc('b77kAQY3y6IKDzrCIaEV');
 
+	const observer = doc.onSnapshot(docSnapshot => {
+  	console.log( docSnapshot.data());
+		count=docSnapshot.data().value;
+  
+	}, err => {
+  	console.log(`Encountered error: ${err}`);
+	});
+	
+
+	
 	let user = { loggedIn: false };
+	console.log(firebase);
+
 
 	function toggle() {
 		user.loggedIn = !user.loggedIn;
