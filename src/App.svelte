@@ -83,9 +83,9 @@ import { HtmlTag } from "svelte/internal";
 	 <!-- Reactivity-->
 	 <p>So this is 'Reactivity'  </p>
 			<div class="buttonArea">
-				<button class='storyIsaac'  >ISAAC <br>*upcoming*</button>
+				<button class='storyIsaac'  >Blurry Eyes <br>*upcoming*</button>
 	 			<button class='storyAbout'  >About <br> - the - <br> Stories<br>*upcoming*</button>
-	 			<button class='storyOlivia' >OLIVIA<br>*upcoming*</button>
+	 			<button class='storyOlivia' >Olivia<br>*upcoming*</button>
 			</div>
 	 <div>
 		 <p>...</p>
