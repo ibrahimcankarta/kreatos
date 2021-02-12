@@ -63716,7 +63716,7 @@ var app = (function () {
   const { console: console_1 } = globals;
   const file = "src/App.svelte";
 
-  // (66:2) {#if user.loggedIn}
+  // (71:2) {#if user.loggedIn}
   function create_if_block_1(ctx) {
   	let button;
   	let mounted;
@@ -63726,8 +63726,8 @@ var app = (function () {
   		c: function create() {
   			button = element("button");
   			button.textContent = "Out";
-  			attr_dev(button, "class", "dummyButton2 svelte-101pb5h");
-  			add_location(button, file, 66, 2, 1821);
+  			attr_dev(button, "class", "dummyButton2 svelte-1gawhoh");
+  			add_location(button, file, 71, 2, 1594);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, button, anchor);
@@ -63749,14 +63749,14 @@ var app = (function () {
   		block,
   		id: create_if_block_1.name,
   		type: "if",
-  		source: "(66:2) {#if user.loggedIn}",
+  		source: "(71:2) {#if user.loggedIn}",
   		ctx
   	});
 
   	return block;
   }
 
-  // (73:3) {#if !user.loggedIn}
+  // (78:3) {#if !user.loggedIn}
   function create_if_block(ctx) {
   	let button;
   	let mounted;
@@ -63766,8 +63766,8 @@ var app = (function () {
   		c: function create() {
   			button = element("button");
   			button.textContent = "In";
-  			attr_dev(button, "class", "dummyButton2 svelte-101pb5h");
-  			add_location(button, file, 73, 3, 1926);
+  			attr_dev(button, "class", "dummyButton2 svelte-1gawhoh");
+  			add_location(button, file, 78, 3, 1699);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, button, anchor);
@@ -63789,7 +63789,7 @@ var app = (function () {
   		block,
   		id: create_if_block.name,
   		type: "if",
-  		source: "(73:3) {#if !user.loggedIn}",
+  		source: "(78:3) {#if !user.loggedIn}",
   		ctx
   	});
 
@@ -63840,30 +63840,53 @@ var app = (function () {
   	let t25;
   	let t26;
   	let t27;
-  	let button1;
-  	let t29;
   	let h32;
+  	let t29;
+  	let t30;
   	let t31;
-  	let t32;
+  	let p4;
   	let t33;
-  	let h33;
+  	let div0;
+  	let button1;
+  	let t34;
+  	let br0;
   	let t35;
+  	let t36;
+  	let button2;
+  	let t37;
+  	let br1;
+  	let t38;
+  	let br2;
+  	let t39;
+  	let br3;
+  	let t40;
+  	let t41;
+  	let button3;
+  	let t42;
+  	let br4;
+  	let t43;
+  	let t44;
+  	let div1;
+  	let p5;
+  	let t46;
+  	let h33;
+  	let t48;
   	let a0;
   	let img1;
   	let img1_src_value;
-  	let t36;
+  	let t49;
   	let a1;
   	let img2;
   	let img2_src_value;
-  	let t37;
+  	let t50;
   	let a2;
   	let img3;
   	let img3_src_value;
-  	let t38;
-  	let p4;
-  	let t39;
+  	let t51;
+  	let p6;
+  	let t52;
   	let a3;
-  	let t41;
+  	let t54;
   	let mounted;
   	let dispose;
   	let if_block0 = /*user*/ ctx[7].loggedIn && create_if_block_1(ctx);
@@ -63910,79 +63933,136 @@ var app = (function () {
   			t25 = text(/*count*/ ctx[6]);
   			t26 = text(" times!");
   			t27 = space();
-  			button1 = element("button");
-  			button1.textContent = "Button Fire";
-  			t29 = space();
   			h32 = element("h3");
   			h32.textContent = "or try this!";
-  			t31 = space();
+  			t29 = space();
   			if (if_block0) if_block0.c();
-  			t32 = space();
+  			t30 = space();
   			if (if_block1) if_block1.c();
+  			t31 = space();
+  			p4 = element("p");
+  			p4.textContent = "So this is 'Reactivity'";
   			t33 = space();
+  			div0 = element("div");
+  			button1 = element("button");
+  			t34 = text("ISAAC ");
+  			br0 = element("br");
+  			t35 = text("*upcoming*");
+  			t36 = space();
+  			button2 = element("button");
+  			t37 = text("About ");
+  			br1 = element("br");
+  			t38 = text(" - the - ");
+  			br2 = element("br");
+  			t39 = text(" Stories");
+  			br3 = element("br");
+  			t40 = text("*upcoming*");
+  			t41 = space();
+  			button3 = element("button");
+  			t42 = text("OLIVIA");
+  			br4 = element("br");
+  			t43 = text("*upcoming*");
+  			t44 = space();
+  			div1 = element("div");
+  			p5 = element("p");
+  			p5.textContent = "...";
+  			t46 = space();
   			h33 = element("h3");
   			h33.textContent = "here's my links!";
-  			t35 = space();
+  			t48 = space();
   			a0 = element("a");
   			img1 = element("img");
-  			t36 = space();
+  			t49 = space();
   			a1 = element("a");
   			img2 = element("img");
-  			t37 = space();
+  			t50 = space();
   			a2 = element("a");
   			img3 = element("img");
-  			t38 = space();
-  			p4 = element("p");
-  			t39 = text("/* Visit the ");
+  			t51 = space();
+  			p6 = element("p");
+  			t52 = text("/*If you want to learn something about 'svelte' Visit the ");
   			a3 = element("a");
   			a3.textContent = "Svelte tutorial";
-  			t41 = text(" to learn how to build Svelte apps. */");
+  			t54 = text("  */");
   			if (img0.src !== (img0_src_value = /*src*/ ctx[1])) attr_dev(img0, "src", img0_src_value);
-  			attr_dev(img0, "class", "headImg svelte-101pb5h");
+  			attr_dev(img0, "class", "headImg svelte-1gawhoh");
+  			attr_dev(img0, "loading", "lazy");
   			attr_dev(img0, "alt", "self portrait");
-  			add_location(img0, file, 48, 1, 1094);
-  			attr_dev(h30, "class", "svelte-101pb5h");
-  			add_location(h30, file, 49, 1, 1148);
-  			attr_dev(h1, "class", "svelte-101pb5h");
-  			add_location(h1, file, 50, 1, 1177);
-  			add_location(p0, file, 51, 1, 1204);
-  			add_location(p1, file, 52, 1, 1228);
-  			add_location(h2, file, 53, 2, 1247);
-  			attr_dev(h31, "class", "svelte-101pb5h");
-  			add_location(h31, file, 54, 2, 1270);
-  			add_location(p2, file, 55, 2, 1306);
-  			attr_dev(button0, "class", "dummyButton svelte-101pb5h");
-  			add_location(button0, file, 59, 2, 1457);
-  			add_location(p3, file, 60, 2, 1626);
-  			attr_dev(button1, "id", "buttonFire");
-  			add_location(button1, file, 61, 2, 1703);
-  			attr_dev(h32, "class", "svelte-101pb5h");
-  			add_location(h32, file, 64, 2, 1775);
-  			attr_dev(h33, "class", "links svelte-101pb5h");
-  			add_location(h33, file, 86, 2, 2014);
+  			add_location(img0, file, 49, 1, 893);
+  			attr_dev(h30, "class", "svelte-1gawhoh");
+  			add_location(h30, file, 50, 1, 962);
+  			attr_dev(h1, "class", "svelte-1gawhoh");
+  			add_location(h1, file, 51, 1, 991);
+  			attr_dev(p0, "class", "svelte-1gawhoh");
+  			add_location(p0, file, 52, 1, 1018);
+  			attr_dev(p1, "class", "svelte-1gawhoh");
+  			add_location(p1, file, 53, 1, 1042);
+  			attr_dev(h2, "class", "svelte-1gawhoh");
+  			add_location(h2, file, 54, 2, 1061);
+  			attr_dev(h31, "class", "svelte-1gawhoh");
+  			add_location(h31, file, 55, 2, 1084);
+  			attr_dev(p2, "class", "svelte-1gawhoh");
+  			add_location(p2, file, 56, 2, 1120);
+  			attr_dev(button0, "class", "dummyButton svelte-1gawhoh");
+  			add_location(button0, file, 61, 2, 1272);
+  			attr_dev(p3, "class", "svelte-1gawhoh");
+  			add_location(p3, file, 62, 2, 1441);
+  			attr_dev(h32, "class", "svelte-1gawhoh");
+  			add_location(h32, file, 68, 2, 1527);
+  			attr_dev(p4, "class", "svelte-1gawhoh");
+  			add_location(p4, file, 83, 2, 1799);
+  			attr_dev(br0, "class", "svelte-1gawhoh");
+  			add_location(br0, file, 85, 39, 1899);
+  			attr_dev(button1, "class", "storyIsaac svelte-1gawhoh");
+  			add_location(button1, file, 85, 4, 1864);
+  			attr_dev(br1, "class", "svelte-1gawhoh");
+  			add_location(br1, file, 86, 40, 1963);
+  			attr_dev(br2, "class", "svelte-1gawhoh");
+  			add_location(br2, file, 86, 53, 1976);
+  			attr_dev(br3, "class", "svelte-1gawhoh");
+  			add_location(br3, file, 86, 65, 1988);
+  			attr_dev(button2, "class", "storyAbout svelte-1gawhoh");
+  			add_location(button2, file, 86, 5, 1928);
+  			attr_dev(br4, "class", "svelte-1gawhoh");
+  			add_location(br4, file, 87, 40, 2052);
+  			attr_dev(button3, "class", "storyOlivia svelte-1gawhoh");
+  			add_location(button3, file, 87, 5, 2017);
+  			attr_dev(div0, "class", "buttonArea svelte-1gawhoh");
+  			add_location(div0, file, 84, 3, 1835);
+  			attr_dev(p5, "class", "svelte-1gawhoh");
+  			add_location(p5, file, 90, 3, 2097);
+  			attr_dev(div1, "class", "svelte-1gawhoh");
+  			add_location(div1, file, 89, 2, 2088);
+  			attr_dev(h33, "class", "links svelte-1gawhoh");
+  			add_location(h33, file, 94, 2, 2121);
   			if (img1.src !== (img1_src_value = "tw-logo.png")) attr_dev(img1, "src", img1_src_value);
-  			attr_dev(img1, "class", "tw-logo svelte-101pb5h");
+  			attr_dev(img1, "class", "tw-logo svelte-1gawhoh");
   			attr_dev(img1, "alt", "twitter logo");
-  			add_location(img1, file, 88, 53, 2108);
+  			add_location(img1, file, 96, 53, 2215);
   			attr_dev(a0, "href", "https://www.twitter.com/ibrahimcankarta");
-  			add_location(a0, file, 88, 2, 2057);
+  			attr_dev(a0, "class", "svelte-1gawhoh");
+  			add_location(a0, file, 96, 2, 2164);
   			if (img2.src !== (img2_src_value = "github.png")) attr_dev(img2, "src", img2_src_value);
-  			attr_dev(img2, "class", "logo svelte-101pb5h");
+  			attr_dev(img2, "class", "logo svelte-1gawhoh");
   			attr_dev(img2, "alt", "github logo");
-  			add_location(img2, file, 90, 52, 2225);
+  			add_location(img2, file, 98, 52, 2332);
   			attr_dev(a1, "href", "https://www.github.com/ibrahimcankarta");
-  			add_location(a1, file, 90, 2, 2175);
+  			attr_dev(a1, "class", "svelte-1gawhoh");
+  			add_location(a1, file, 98, 2, 2282);
   			if (img3.src !== (img3_src_value = "linkedin.png")) attr_dev(img3, "src", img3_src_value);
-  			attr_dev(img3, "class", "logo svelte-101pb5h");
+  			attr_dev(img3, "class", "logo svelte-1gawhoh");
   			attr_dev(img3, "alt", "linkedin logo");
-  			add_location(img3, file, 92, 57, 2342);
+  			add_location(img3, file, 100, 57, 2449);
   			attr_dev(a2, "href", "https://www.linkedin.com/in/ibrahimcankarta");
-  			add_location(a2, file, 92, 2, 2287);
+  			attr_dev(a2, "class", "svelte-1gawhoh");
+  			add_location(a2, file, 100, 2, 2394);
   			attr_dev(a3, "href", "https://svelte.dev/tutorial");
-  			add_location(a3, file, 96, 18, 2430);
-  			add_location(p4, file, 96, 1, 2413);
-  			attr_dev(main, "class", "svelte-101pb5h");
-  			add_location(main, file, 46, 0, 1084);
+  			attr_dev(a3, "class", "svelte-1gawhoh");
+  			add_location(a3, file, 104, 63, 2584);
+  			attr_dev(p6, "class", "svelte-1gawhoh");
+  			add_location(p6, file, 104, 1, 2522);
+  			attr_dev(main, "class", "svelte-1gawhoh");
+  			add_location(main, file, 47, 0, 870);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -64025,36 +64105,55 @@ var app = (function () {
   			append_dev(p3, t25);
   			append_dev(p3, t26);
   			append_dev(main, t27);
-  			append_dev(main, button1);
-  			append_dev(main, t29);
   			append_dev(main, h32);
-  			append_dev(main, t31);
+  			append_dev(main, t29);
   			if (if_block0) if_block0.m(main, null);
-  			append_dev(main, t32);
+  			append_dev(main, t30);
   			if (if_block1) if_block1.m(main, null);
+  			append_dev(main, t31);
+  			append_dev(main, p4);
   			append_dev(main, t33);
+  			append_dev(main, div0);
+  			append_dev(div0, button1);
+  			append_dev(button1, t34);
+  			append_dev(button1, br0);
+  			append_dev(button1, t35);
+  			append_dev(div0, t36);
+  			append_dev(div0, button2);
+  			append_dev(button2, t37);
+  			append_dev(button2, br1);
+  			append_dev(button2, t38);
+  			append_dev(button2, br2);
+  			append_dev(button2, t39);
+  			append_dev(button2, br3);
+  			append_dev(button2, t40);
+  			append_dev(div0, t41);
+  			append_dev(div0, button3);
+  			append_dev(button3, t42);
+  			append_dev(button3, br4);
+  			append_dev(button3, t43);
+  			append_dev(main, t44);
+  			append_dev(main, div1);
+  			append_dev(div1, p5);
+  			append_dev(main, t46);
   			append_dev(main, h33);
-  			append_dev(main, t35);
+  			append_dev(main, t48);
   			append_dev(main, a0);
   			append_dev(a0, img1);
-  			append_dev(main, t36);
+  			append_dev(main, t49);
   			append_dev(main, a1);
   			append_dev(a1, img2);
-  			append_dev(main, t37);
+  			append_dev(main, t50);
   			append_dev(main, a2);
   			append_dev(a2, img3);
-  			append_dev(main, t38);
-  			append_dev(main, p4);
-  			append_dev(p4, t39);
-  			append_dev(p4, a3);
-  			append_dev(p4, t41);
+  			append_dev(main, t51);
+  			append_dev(main, p6);
+  			append_dev(p6, t52);
+  			append_dev(p6, a3);
+  			append_dev(p6, t54);
 
   			if (!mounted) {
-  				dispose = [
-  					listen_dev(button0, "click", /*handleClick*/ ctx[8], false, false, false),
-  					listen_dev(button1, "click", buttonFire, false, false, false)
-  				];
-
+  				dispose = listen_dev(button0, "click", /*handleClick*/ ctx[8], false, false, false);
   				mounted = true;
   			}
   		},
@@ -64081,7 +64180,7 @@ var app = (function () {
   				} else {
   					if_block0 = create_if_block_1(ctx);
   					if_block0.c();
-  					if_block0.m(main, t32);
+  					if_block0.m(main, t30);
   				}
   			} else if (if_block0) {
   				if_block0.d(1);
@@ -64094,7 +64193,7 @@ var app = (function () {
   				} else {
   					if_block1 = create_if_block(ctx);
   					if_block1.c();
-  					if_block1.m(main, t33);
+  					if_block1.m(main, t31);
   				}
   			} else if (if_block1) {
   				if_block1.d(1);
@@ -64108,7 +64207,7 @@ var app = (function () {
   			if (if_block0) if_block0.d();
   			if (if_block1) if_block1.d();
   			mounted = false;
-  			run_all(dispose);
+  			dispose();
   		}
   	};
 
@@ -64137,12 +64236,12 @@ var app = (function () {
 
   	function handleClick() {
   		$$invalidate(6, count += 1);
-  		const docRef = db.collection("number").doc("b77kAQY3y6IKDzrCIaEV");
+  		const docRef = db.collection("number counter").doc("number");
   		docRef.set({ value: count });
   	}
 
   	const db = firebase$1.firestore();
-  	const doc = db.collection("number").doc("b77kAQY3y6IKDzrCIaEV");
+  	const doc = db.collection("number counter").doc("number");
 
   	const observer = doc.onSnapshot(
   		docSnapshot => {
@@ -64317,7 +64416,7 @@ var app = (function () {
   		name: 'Kreatos',
   		message:'world',
   		expText: 'Hi Guys! this is my personal web site, made with "svelte" and lots of fun. I am half developer and half designer. if you want to cantact with me, scroll the end! Peace out::',
-  		src : '/.jpg',
+  		src : '/self.jpg',
   		entry: "Yeah yeah yeah, i know it's boring to looking at someone's web site especially he/she is a developer. Maybe it can be fun, maybe i can do it.  ",
   		drummers:"So, why not?"
   	}

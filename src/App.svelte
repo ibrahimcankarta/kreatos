@@ -13,14 +13,17 @@ import { HtmlTag } from "svelte/internal";
 	let count =0;
 	function handleClick() {
 	count += 1;
-	const docRef = db.collection('number').doc('b77kAQY3y6IKDzrCIaEV');
+	const docRef = db.collection('number counter').doc('number');
 	docRef.set({
   value:count
 	});
 	}
 
+	
+
 	const db = firebase.firestore();
-	const doc = db.collection('number').doc('b77kAQY3y6IKDzrCIaEV');
+	const doc = db.collection('number counter').doc('number');
+
 
 	const observer = doc.onSnapshot(docSnapshot => {
   	console.log( docSnapshot.data());
@@ -42,11 +45,9 @@ import { HtmlTag } from "svelte/internal";
 </script>
 
 
-
-<!--  if you looking in here, please follow this link! : https://www.youtube.com/watch?v=GoLJJRIWCLU this is my fav song to listen. With this song, web site is cooler than actually is. Hope you enjoy! -->
 <main>
-	
-	<img src= {src} class="headImg" alt="self portrait">
+	<!-- intro-->
+	<img src= {src} class="headImg" loading='lazy' alt="self portrait">
 	<h3> -this is {name}- </h3>
 	<h1>Hello {message}!</h1>
 	<p>/* {expText} */</p>
@@ -54,15 +55,19 @@ import { HtmlTag } from "svelte/internal";
 	 <h2>{drummers}</h2> 
 	 <h3> Let's start with basic </h3>
 	 <p> if i use svelte, it must have meaning. this all text are came from 'props' don't you believe? look to the source.   </p>
+	 
 
-	 <!-- Reactivity -->
+	 <!-- Firebase -->
 
 	 <button class="dummyButton" on:click="{handleClick}"> Click this button! {count===0 ? 'nobody clicked this button yet :( ' : ' to make this button happy!' } </button>
-	 <p> people clicked this button {count} times!     </p> <!-- Reactivity -->
-	 <button id="buttonFire" on:click={buttonFire} >Button Fire</button>
+	 <p> people clicked this button {count} times!     </p> 
+	 
+	 <!-- Firebase -->
+	 
 
 
 	 <h3>or try this!</h3>
+	 <!-- Reactivity-->
 	 {#if user.loggedIn}
 	 <button class="dummyButton2" on:click={toggle}>
 		Out
@@ -75,13 +80,16 @@ import { HtmlTag } from "svelte/internal";
 				In
 			</button>
 		{/if}
-
-
-
-
-
-
-
+	 <!-- Reactivity-->
+	 <p>So this is 'Reactivity'  </p>
+			<div class="buttonArea">
+				<button class='storyIsaac'  >ISAAC <br>*upcoming*</button>
+	 			<button class='storyAbout'  >About <br> - the - <br> Stories<br>*upcoming*</button>
+	 			<button class='storyOlivia' >OLIVIA<br>*upcoming*</button>
+			</div>
+	 <div>
+		 <p>...</p>
+	 </div>
 
 
 	 <h3 class="links">here's my links!</h3>
@@ -91,14 +99,31 @@ import { HtmlTag } from "svelte/internal";
 	 <a href="https://www.github.com/ibrahimcankarta"> <img src="github.png" class="logo" alt="github logo"> </a>
 
 	 <a href="https://www.linkedin.com/in/ibrahimcankarta"> <img src="linkedin.png" class="logo" alt="linkedin logo"> </a>
-
 	 
 	 
-	<p> /* Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps. */</p>
+	 
+	<p> /*If you want to learn something about 'svelte' Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a>  */</p>
 </main>
 
 <style>
-	
+	main{
+		font-family: Helvetica;
+		scroll-behavior:smooth;
+		
+	}
+	::-webkit-scrollbar{
+		width:12px;
+		background-color: wheat;
+	}
+	::-webkit-scrollbar-track{
+		border-radius: 3px;
+		background-color: transparent;
+	}
+	::-webkit-scrollbar-thumb{
+		border-radius: 5px;
+		background-color: black;
+		border: 20px solid green;
+	}
 
 	.headImg{
 		max-width: 420px;
@@ -140,6 +165,7 @@ import { HtmlTag } from "svelte/internal";
 		font-weight: bold;
 		margin: 7px;
 		
+		
 	}
 	.dummyButton2{
 		border-radius: 5px;
@@ -148,13 +174,71 @@ import { HtmlTag } from "svelte/internal";
 		font-weight: bold;
 		margin: 7px;
 	}
+	.buttonArea{
+		display:flex;
+		justify-content: center;
+	}
+	.storyIsaac{
+		
+		border-radius: 5px;
+		width:220px ;
+		height: 140px ;
+		background-color: #ff7b00;
+		font-weight:bold;
+		margin-right: 7px;
+	}
+	.storyAbout{
+		border-radius: 5px;
+		width:220px ;
+		height: 140px ;
+		background-color: #ff7b00;
+		font-weight:bold;
+		margin-right:7px;
+		margin-left: 7px;
+		
+	}
+	.storyOlivia{
+		border-radius: 5px;
+		width:220px ;
+		height: 140px ;
+		background-color: #ff7b00;
+		font-weight:bold;
+		margin-left: 7px;
+	
+	}
 	.dummyButton:hover{
+		background-color: black;
+		width: 430px;
+		color: blanchedalmond;
+		box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.17);
+	}
+	.dummyButton2:hover{
+		box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.17);
+		width: 74px;;
 		background-color: black;
 		color: blanchedalmond;
 	}
-	.dummyButton2:hover{
+	.storyIsaac:hover{
+		box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.17);
 		background-color: black;
 		color: blanchedalmond;
+		font-size: 18px;
+	}
+	.storyAbout:hover{
+		box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.17);
+		background-color: black;
+		color: blanchedalmond;
+		font-size: 18px;
+
+		
+	}
+	.storyOlivia:hover{
+		box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.17);
+		background-color: black;
+		color: blanchedalmond;
+		font-size: 18px;
+
+		
 	}
 	.logo{
 		max-width: 40px;
@@ -169,5 +253,8 @@ import { HtmlTag } from "svelte/internal";
 		margin-right: 7px;
 		background-color: black;
 		border-radius: 1ch;
+	}
+	.links{
+		margin:7px;
 	}
 </style>
